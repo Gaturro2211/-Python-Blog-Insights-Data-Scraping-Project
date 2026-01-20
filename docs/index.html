@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaturro2211 | Python Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #306998; --secondary: #ffd43b; --accent: #4b8bbe; --dark: #1e1e1e; }
+        body { font-family: 'Poppins', sans-serif; background: #f4f7f6; margin: 0; padding: 20px; color: var(--dark); }
+        .main-container { max-width: 850px; margin: 40px auto; background: white; padding: 40px; border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); border-top: 10px solid var(--primary); }
+        .header { text-align: center; margin-bottom: 30px; }
+        .user-badge { background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; }
+        h1 { color: var(--primary); font-size: 2.5rem; margin-top: 15px; }
+        .topic-info { background: #fff9e6; border: 1px dashed var(--secondary); padding: 20px; border-radius: 15px; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; }
+        .btn { display: flex; align-items: center; justify-content: center; background: white; padding: 18px; border-radius: 12px; text-decoration: none; color: var(--primary); font-weight: 600; border: 2px solid #eee; transition: 0.3s; gap: 10px; }
+        .btn:hover { background: var(--primary); color: white; border-color: var(--primary); transform: translateY(-5px); }
+        .footer { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #999; }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <span class="user-badge">@Gaturro2211</span>
+            <h1>Python Insider Hub</h1>
+            <p>Análisis Estadístico de Actualizaciones de Software</p>
+        </div>
+
+        <div class="topic-info">
+            <strong>🔍 Tema del Blog:</strong> Noticias oficiales sobre el desarrollo del lenguaje Python. 
+            El scraper analizó los últimos movimientos de la comunidad, destacando la alta frecuencia de términos como <strong>"Alpha"</strong> y <strong>"Available"</strong>.
+        </div>
+        
+        <div class="grid">
+            <a href="https://github.com/Gaturro2211/proyecto-blog-python/blob/main/data/posts_python_blog.csv" class="btn">📂 Datos Brutos (Raw)</a>
+            <a href="https://github.com/Gaturro2211/proyecto-blog-python/blob/main/data/posts_python_blog_procesado.csv" class="btn">🧹 Datos Limpios (Clean)</a>
+            <a href="https://github.com/Gaturro2211/proyecto-blog-python/blob/main/data/top_palabras_titulos.csv" class="btn">📊 Resumen (Summary)</a>
+        </div>
+
+        <div class="footer">
+            Proyecto de Scrapeo Estático • 2026 • Fuente: blog.python.org
+        </div>
+    </div>
+</body>
+</html>
